@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "of2-content"
+version = "0.1.0"
+description = "Content server for site to-be-named"
+authors = ["kpitzen <kyle.pitzen@gmail.com>"]
+packages = [
+    { from = "src", include = "app" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.68.1"
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+
+[tool.poetry.dev-dependencies]
+isort = "^5.9.3"
+black = "^21.7b0"
+pytest = "^6.2.4"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
