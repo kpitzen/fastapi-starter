@@ -11,4 +11,4 @@ format:
 	poetry run black --verbose src tests
 
 serve:
-	poetry run uvicorn app.main:app --reload
+	poetry run uvicorn api.app:app --reload

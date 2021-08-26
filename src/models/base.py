@@ -1,7 +1,7 @@
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.ext.declarative import declarative_base
 
 ModelBase = declarative_base()
 
 
-class Base(ModelBase):
+class Base(ModelBase):  # type: ignore
     __abstract__ = True

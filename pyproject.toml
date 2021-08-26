@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Content server for site to-be-named"
 authors = ["kpitzen <kyle.pitzen@gmail.com>"]
 packages = [
-    { from = "src", include = "app" }
+    { from = "src", include = "api" }
 ]
 
 [tool.poetry.dependencies]
